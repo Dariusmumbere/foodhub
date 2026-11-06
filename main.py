@@ -74,7 +74,7 @@ class Restaurant(Base):
     phone: Mapped[str] = mapped_column(String(20), default="")
     image_url: Mapped[str] = mapped_column(String(300), default="")
     commission_pct: Mapped[int] = mapped_column(Integer, default=10)  # platform cut of subtotal
-    is_approved: Mapped[bool] = mapped_column(Boolean, default=False)  # admin vets restaurants
+    is_approved: Mapped[bool] = mapped_column(Boolean, default=True)  # admin vets restaurants
     is_open: Mapped[bool] = mapped_column(Boolean, default=True)
     menu: Mapped[List["MenuItem"]] = relationship(back_populates="restaurant", lazy="selectin")
 
