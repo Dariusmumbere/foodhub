@@ -5,3 +5,4 @@ psycopg2-binary>=2.9
 pydantic>=2.6
 bcrypt>=4.1
 PyJWT>=2.8
+psycopg
